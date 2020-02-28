@@ -36,7 +36,7 @@ function displayResults(json) {
                     <h3>${json.data[i].fullName}</h3>
                     <p>${json.data[i].description}</p>
                     <p><a href='${json.data[i].url}' target="_blank">Link to park website.</a></p>`
-            )
+                )
             }
     }
     else {
