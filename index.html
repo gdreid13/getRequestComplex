@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks Search Tool</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>National Parks Search</h2>
+        <p>Here you can search for National Parks by state.</p>
+        <p>Please use two-letter state codes, separated by commas, no spaces (e.g. WY,VA,AK)</p>
+        <form id="js-form">
+            <label for="search-term">State(s)</label>
+            <input type="text" name="search-term" id="search-term">
+            
+            <label for="max-results">Max Results</label>
+            <input type="text" name="max-results" id="max-results" value="10">
+            
+            <input type="submit" value="Search">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        
+        <section id="results" class="hidden">
+            <h3>Search Results:</h3>
+                <ul id="results-list">              
+                </ul>
+        </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
